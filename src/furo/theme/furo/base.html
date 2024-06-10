@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js"{% if language is not none %} lang="{{ language }}"{% endif %}>
+<html class="no-js"{% if language is not none %} lang="{{ language }}"{% endif %} data-content_root="{{ content_root }}">
   <head>
     {%- block site_meta -%}
     <meta charset="utf-8"/>
@@ -38,8 +38,7 @@
       <link rel="shortcut icon" href="{{ favicon_url }}"/>
     {%- endif -%}
 
-    {#- Generator banner -#}
-    <meta name="generator" content="sphinx-{{ sphinx_version }}, furo {{ furo_version }}"/>
+    <!-- Generated with Sphinx {{ sphinx_version }} and Furo {{ furo_version }} -->
 
     {%- endblock site_meta -%}
 

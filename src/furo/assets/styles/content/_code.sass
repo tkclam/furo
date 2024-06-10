@@ -1,13 +1,20 @@
 // Inline code
-code.literal
+code.literal, .sig-inline
   background: var(--color-inline-code-background)
   border-radius: 0.2em
   // Make the font smaller, and use padding to recover.
   font-size: var(--font-size--small--2)
   padding: 0.1em 0.2em
 
+  pre.literal-block &
+    font-size: inherit
+    padding: 0
+
   p &
     border: 1px solid var(--color-background-border)
+
+.sig-inline
+  font-family: var(--font-stack--monospace)
 
 // Code and Literal Blocks
 $code-spacing-vertical: 0.625rem
@@ -26,6 +33,7 @@ div[class^="highlight-"]
 pre
   margin: 0
   padding: 0
+  overflow: auto
 
   // Needed to have more specificity than pygments' "pre" selector. :(
   article[role="main"] .highlight &
@@ -35,7 +43,6 @@ pre
   .highlight &
     font-size: var(--code-font-size)
     padding: $code-spacing-vertical $code-spacing-horizontal
-    overflow: auto
 
   // Make it look like all the other blocks.
   &.literal-block

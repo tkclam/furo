@@ -1,5 +1,9 @@
 # Changing footer icons
 
+```{versionadded} 2022.02.14
+
+```
+
 Furo allows customising the icons that are presented in the page footer. These icons can be used to link to relevant resources for your project and documentation.
 
 ```{admonition} Unstable, seeking feedback
@@ -71,9 +75,9 @@ If you wish to use Font Awesome icons in the footer, it's a two step process.
 
   ```py
   html_css_files = [
-        "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/fontawesome.min.css",
-        "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/solid.min.css",
-        "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/brands.min.css",
+      "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/fontawesome.min.css",
+      "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/solid.min.css",
+      "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/brands.min.css",
   ]
   ```
 
@@ -86,7 +90,7 @@ If you wish to use Font Awesome icons in the footer, it's a two step process.
               "name": "GitHub",
               "url": "https://github.com/pradyunsg/furo",
               "html": "",
-              "class": "fa-solid fa-github fa-2x",
+              "class": "fa-brands fa-solid fa-github fa-2x",
           },
       ],
   }
